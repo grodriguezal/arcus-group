@@ -16,6 +16,7 @@
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header" data-header>
+    <div class="scroll-progress" data-progress></div>
     <a class="brand" href="#inicio" aria-label="Arcus Group, inicio">
       <img src="assets/arcus-group-logo-transparent.png" alt="Arcus Group">
     </a>
@@ -30,9 +31,19 @@
     </nav>
   </header>
 
+  <nav class="section-rail" aria-label="Navegación por secciones" data-section-rail>
+    <a href="#inicio" aria-label="Inicio"><span>00</span></a>
+    <a href="#plataforma" aria-label="La plataforma"><span>01</span></a>
+    <a href="#portfolio" aria-label="Portfolio"><span>02</span></a>
+    <a href="#que-hacemos" aria-label="Qué hacemos"><span>03</span></a>
+    <a href="#filosofia" aria-label="Filosofía"><span>04</span></a>
+    <a href="#sobre-arcus" aria-label="Sobre Arcus"><span>05</span></a>
+    <a href="#contacto" aria-label="Contacto"><span>06</span></a>
+  </nav>
+
   <main id="contenido">
     <section class="hero" id="inicio">
-      <div class="hero-orbit" aria-hidden="true"><span></span></div>
+      <div class="hero-arches" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="hero-content shell">
         <p class="eyebrow reveal">Grupo empresarial · Caracas, Venezuela</p>
         <h1 class="reveal">Construimos negocios.<br><em>Desarrollamos oportunidades.</em></h1>
@@ -73,14 +84,15 @@
           <div class="company-number">01</div>
           <div class="company-title">
             <p>Salud &amp; Bienestar</p>
+            <div class="portfolio-logo logo-vivomixx"><img src="assets/vivomixx-neo-logo.png" alt="Vivomixx neo"></div>
             <h3>Vitalbiotic</h3>
           </div>
           <div class="company-copy">
             <p>Compañía especializada en la comercialización y desarrollo de soluciones vinculadas a la microbiota y la salud gastrointestinal.</p>
-            <p>Responsable de la comercialización de <strong>Vivomixx Neo en Venezuela</strong>, conectando productos especializados con profesionales de la salud, farmacias y consumidores.</p>
+            <p>Responsable de la comercialización de <strong>Vivomixx neo en Venezuela</strong>, conectando productos especializados con profesionales de la salud, farmacias y consumidores.</p>
             <p>Desde Vitalbiotic trabajamos en el desarrollo de la marca, su estrategia comercial, distribución y posicionamiento en el país.</p>
             <p>Nuestro objetivo es construir una plataforma especializada capaz de incorporar progresivamente nuevas soluciones de alto valor para el mercado venezolano.</p>
-            <a href="#contacto" class="text-link">Conocer Vitalbiotic <span>↗</span></a>
+            <a href="https://www.vivomixxneovenezuela.com/" target="_blank" rel="noopener noreferrer" class="text-link">Conocer Vivomixx neo <span>↗</span></a>
           </div>
           <div class="company-mark" aria-hidden="true">V</div>
         </article>
@@ -89,6 +101,7 @@
           <div class="company-number">02</div>
           <div class="company-title">
             <p>Diseño &amp; Equipamiento</p>
+            <div class="portfolio-logo logo-soler"><img src="assets/ramon-soler-logo.svg" alt="Ramón Soler"></div>
             <h3>Ramón Soler<br>Venezuela</h3>
           </div>
           <div class="company-copy">
@@ -96,7 +109,7 @@
             <p>Desarrollamos su presencia local junto a arquitectos, diseñadores, constructoras, distribuidores y clientes particulares.</p>
             <p>Fundada en Barcelona en 1890, Ramón Soler combina diseño, tecnología, innovación y una larga tradición industrial aplicada a proyectos residenciales, comerciales y de arquitectura.</p>
             <p>Nuestra labor abarca el posicionamiento, desarrollo comercial, atención a proyectos y construcción de una red para acercar sus colecciones al mercado venezolano.</p>
-            <a href="#contacto" class="text-link">Conocer Ramón Soler Venezuela <span>↗</span></a>
+            <a href="https://rsramonsoler.com/" target="_blank" rel="noopener noreferrer" class="text-link">Conocer Ramón Soler <span>↗</span></a>
           </div>
           <div class="company-mark" aria-hidden="true">R</div>
         </article>
@@ -105,13 +118,14 @@
           <div class="company-number">03</div>
           <div class="company-title">
             <p>Construcción · Reformas · Interiores</p>
+            <div class="portfolio-logo logo-enconcreto"><img src="assets/enconcreto-proyectos-logo.png" alt="Enconcreto Proyectos"></div>
             <h3>Enconcreto<br>Proyectos</h3>
           </div>
           <div class="company-copy">
             <p>Unidad especializada en el desarrollo integral de espacios, desde la conceptualización inicial hasta la ejecución y entrega final.</p>
             <p>Diseño, funcionalidad y capacidad de ejecución para crear soluciones bien pensadas que mantienen su valor en el tiempo.</p>
             <p>Desarrollamos proyectos residenciales y comerciales adaptados a cada cliente, con especial atención a la calidad de ejecución, selección de materiales y resolución de detalles.</p>
-            <a href="#contacto" class="text-link">Conocer Enconcreto Proyectos <span>↗</span></a>
+            <a href="https://enconcretoproyectos.com/" target="_blank" rel="noopener noreferrer" class="text-link">Conocer Enconcreto Proyectos <span>↗</span></a>
           </div>
           <div class="company-mark" aria-hidden="true">E</div>
         </article>
@@ -124,54 +138,48 @@
         <p class="statement-intro reveal">No somos únicamente propietarios.<br>Participamos activamente en la creación, desarrollo y crecimiento de cada negocio.</p>
         <div class="verbs">
           <article class="verb reveal">
-            <span>01</span><h3>We build.</h3>
+            <span>01</span><h3>Construimos.</h3>
             <p>Identificamos oportunidades y desarrollamos proyectos desde sus primeras etapas. Esto puede implicar construir una compañía, definir su propuesta de valor, desarrollar una marca, estructurar su modelo comercial o crear las capacidades necesarias para entrar en una nueva categoría.</p>
           </article>
           <article class="verb reveal">
-            <span>02</span><h3>We represent.</h3>
+            <span>02</span><h3>Representamos.</h3>
             <p>Trabajamos con marcas internacionales que buscan desarrollar su presencia en Venezuela. Más allá de importar o distribuir, construimos su mercado local: categoría, estrategia comercial, canales, posicionamiento y relaciones de largo plazo.</p>
           </article>
           <article class="verb reveal">
-            <span>03</span><h3>We operate.</h3>
+            <span>03</span><h3>Operamos.</h3>
             <p>Nos involucramos en estrategia, marketing, desarrollo comercial, operaciones, alianzas y expansión, aportando capacidades compartidas y preservando la autonomía de cada compañía. El valor ocurre en la ejecución cotidiana, no solamente en la propiedad.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section philosophy">
+    <section class="section philosophy" id="filosofia">
       <div class="shell section-grid">
         <div class="section-label reveal"><span>04</span> Nuestra forma</div>
         <div class="section-main">
           <h2 class="display reveal">Una filosofía compartida.</h2>
-          <div class="principles">
-            <article class="principle reveal"><span>01</span><h3>Especialización</h3><p>Cada compañía desarrolla experiencia, relaciones y capacidades propias para comprender de verdad la categoría en la que participa.</p></article>
-            <article class="principle reveal"><span>02</span><h3>Ejecución</h3><p>Las buenas ideas necesitan capacidad para convertirse en realidad. Participamos directamente en los proyectos en los que creemos.</p></article>
-            <article class="principle reveal"><span>03</span><h3>Calidad</h3><p>Elegimos productos, marcas, proyectos y partners con propuestas sólidas y diferenciadas, y aplicamos el mismo estándar a nuestra operación.</p></article>
-            <article class="principle reveal"><span>04</span><h3>Largo plazo</h3><p>Construimos relaciones duraderas y desarrollamos compañías con vocación de permanencia, más allá de oportunidades puntuales.</p></article>
-            <article class="principle reveal"><span>05</span><h3>Crecimiento sostenible</h3><p>Preferimos negocios sólidos, capaces de crecer de forma ordenada, rentable y sostenible, antes que crecimiento sin estructura.</p></article>
+          <div class="principles reveal" data-principles>
+            <div class="principle-tabs" role="tablist" aria-label="Principios de Arcus">
+              <button class="active" role="tab" aria-selected="true" data-principle="0"><span>01</span> Especialización</button>
+              <button role="tab" aria-selected="false" data-principle="1"><span>02</span> Ejecución</button>
+              <button role="tab" aria-selected="false" data-principle="2"><span>03</span> Calidad</button>
+              <button role="tab" aria-selected="false" data-principle="3"><span>04</span> Largo plazo</button>
+              <button role="tab" aria-selected="false" data-principle="4"><span>05</span> Crecimiento sostenible</button>
+            </div>
+            <div class="principle-stage" aria-live="polite">
+              <span data-principle-number>01</span>
+              <h3 data-principle-title>Especialización</h3>
+              <p data-principle-copy>Cada compañía desarrolla experiencia, relaciones y capacidades propias para comprender de verdad la categoría en la que participa.</p>
+              <div class="principle-arch" aria-hidden="true"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="evolution">
-      <div class="shell evolution-grid">
-        <div class="arch-graphic reveal" aria-hidden="true"><i></i><i></i><i></i></div>
-        <div class="evolution-copy reveal">
-          <div class="section-label light"><span>05</span> Un portfolio en evolución</div>
-          <h2>Una visión<br><em>abierta.</em></h2>
-          <p>Nuestro portfolio refleja las oportunidades que hemos desarrollado hasta hoy, pero no define las categorías en las que participaremos mañana.</p>
-          <p>Estamos abiertos a explorar nuevas oportunidades empresariales, desarrollar nuevas compañías y representar marcas con potencial en Venezuela.</p>
-          <p>Lo que buscamos no es pertenecer a una industria concreta.</p>
-          <p>Buscamos negocios en los que podamos aportar capacidad de ejecución, conocimiento del mercado y una visión clara de desarrollo.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about">
+    <section class="section about" id="sobre-arcus">
       <div class="shell section-grid">
-        <div class="section-label reveal"><span>06</span> Sobre Arcus</div>
+        <div class="section-label reveal"><span>05</span> Sobre Arcus</div>
         <div class="section-main about-main reveal">
           <p class="lead">Arcus Group es un grupo empresarial privado con sede en Caracas, Venezuela.</p>
           <div class="body-copy">
@@ -180,40 +188,32 @@
             <p>Nuestro objetivo es continuar desarrollando el grupo de manera selectiva, incorporando oportunidades cuando exista una razón clara para hacerlo y cuando podamos aportar algo más que capital.</p>
           </div>
         </div>
+        <div class="about-logo reveal"><img src="assets/arcus-group-logo-transparent.png" alt="Arcus Group"></div>
       </div>
     </section>
 
-    <section class="opportunities" id="alianzas">
+    <section class="contact contact-merged" id="contacto">
       <div class="shell">
-        <div class="section-label reveal"><span>07</span> Oportunidades &amp; Alianzas</div>
-        <div class="opportunities-grid">
-          <h2 class="reveal">Convirtamos una buena oportunidad en un negocio con futuro.</h2>
-          <div class="opportunity-list reveal">
+        <div class="section-label light reveal"><span>06</span> Oportunidades &amp; Contacto</div>
+        <div class="contact-hero">
+          <h2 class="reveal">Construyamos<br><em>algo juntos.</em></h2>
+          <p class="contact-lead reveal">Convirtamos una buena oportunidad en un negocio con futuro.</p>
+        </div>
+        <div class="contact-content reveal">
+          <div class="opportunity-list">
             <p>Estamos abiertos a conversar con empresas, marcas, emprendedores y profesionales interesados en desarrollar nuevas oportunidades en Venezuela.</p>
             <ul>
               <li>Representación de marcas internacionales</li>
               <li>Distribución de productos especializados</li>
               <li>Desarrollo de nuevos negocios</li>
-              <li>Alianzas estratégicas</li>
-              <li>Proyectos y oportunidades de inversión</li>
-              <li>Colaboraciones con las compañías del portfolio</li>
+              <li>Alianzas estratégicas e inversión</li>
             </ul>
-            <a class="button" href="#contacto">Hablemos <span>↗</span></a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contacto">
-      <div class="shell contact-grid">
-        <div>
-          <div class="section-label light reveal"><span>08</span> Contacto</div>
-          <h2 class="reveal">Construyamos<br><em>algo juntos.</em></h2>
-        </div>
-        <div class="contact-details reveal">
-          <p>Para información corporativa, oportunidades de negocio, alianzas o consultas relacionadas con cualquiera de nuestras compañías.</p>
-          <a class="email" href="mailto:contacto@arcus____.com">contacto@arcus____.com <span>↗</span></a>
-          <div class="contact-meta"><p>Arcus Group<br>Caracas, Venezuela</p><a href="#contacto">LinkedIn ↗</a></div>
+          <div class="contact-details">
+            <p>Para información corporativa, oportunidades de negocio, alianzas o consultas relacionadas con nuestras compañías.</p>
+            <a class="email" href="mailto:contacto@arcus____.com">contacto@arcus____.com <span>↗</span></a>
+            <div class="contact-meta"><p>Arcus Group<br>Caracas, Venezuela</p><a href="#contacto">LinkedIn ↗</a></div>
+          </div>
         </div>
       </div>
     </section>
@@ -223,7 +223,7 @@
     <div class="shell footer-grid">
       <img src="assets/arcus-group-logo-inverse.png" alt="Arcus Group">
       <div><p>Nuestras compañías</p><a href="#portfolio">Vitalbiotic</a><a href="#portfolio">Ramón Soler Venezuela</a><a href="#portfolio">Enconcreto Proyectos</a></div>
-      <div><p>Navegación</p><a href="#plataforma">Nosotros</a><a href="#que-hacemos">Qué hacemos</a><a href="#alianzas">Alianzas</a></div>
+      <div><p>Navegación</p><a href="#plataforma">Nosotros</a><a href="#que-hacemos">Qué hacemos</a><a href="#contacto">Alianzas</a></div>
       <div class="footer-bottom"><span>© <span data-year></span> Arcus Group</span><a href="#inicio">Volver arriba ↑</a></div>
     </div>
   </footer>
